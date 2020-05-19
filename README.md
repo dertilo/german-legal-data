@@ -3,3 +3,5 @@
     0. `curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash`
     0. `git lfs install`
     
+1. clone repo `https://github.com/dertilo/german-legal-data.git`
+2. start elasticsearch with `cd elasticsearch_index && docker-compose up -d`
