@@ -4,6 +4,7 @@
     0. `git lfs install`
     
 1. clone repo `https://github.com/dertilo/german-legal-data.git`
+1. `pip install -r requirements.txt`
 2. start elasticsearch with `cd elasticsearch_index && docker-compose up -d`
 3. populate es-index: `python bverfg_to_es.py`  
     `populating es-index with 16197 documents took: 10.25 seconds`
@@ -28,3 +29,34 @@
 1           Entscheidungsgründe      2
 6                    Tatbestand      2
 ```
+
+#### kibana console
++ before 1990
+```shell script
+ GET /bverfg/_count
+    {
+      "query": {
+        "range": {
+          "date": {
+            "lte": "1990-01-01"
+          }
+        }
+      }
+    }
+
+```
+-> `"count" : 4592`
+
+```shell script
+GET /bverfg/_search
+{
+  "query": {
+    "match_phrase": {
+      "Gründe": "Verfassungswidrigkeit"
+    }
+  },
+  "_source": {"includes": "Gründe"}, 
+  "size": 20
+}
+```
+-> `2161` decisions
