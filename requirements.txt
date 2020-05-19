@@ -1,0 +1,3 @@
+util@git+https://git@github.com/dertilo/util.git#egg=util
+esutil@git+https://git@github.com/dertilo/elasticsearching.git#egg=esutil
+pandas
