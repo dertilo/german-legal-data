@@ -1,6 +1,6 @@
 from time import sleep, time
 
-from es_parallel_bulk import populate_es_parallel_bulk
+from esutil.es_parallel_bulk import populate_es_parallel_bulk
 from esutil.es_util import build_es_client
 
 if __name__ == "__main__":
