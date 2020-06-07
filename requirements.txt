@@ -3,3 +3,4 @@ esutil@git+https://git@github.com/dertilo/elasticsearching.git#egg=esutil
 pandas
 whoosh
 tqdm
+beautifulsoup4

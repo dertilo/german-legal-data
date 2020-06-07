@@ -10,6 +10,7 @@
     `populating es-index with 16197 documents took: 10.25 seconds`
 
 ### fun with elasticsearch + kibana
+* following numbers are calculated on `Entscheidungen des Bundesverfassungsgerichts`, see [BverfG.jsonl.gz](BverfG.jsonl.gz)
 * count fields: `python count_fields.py`
 ```shell script
                           field  count
@@ -60,3 +61,5 @@ GET /bverfg/_search
 }
 ```
 -> `2161` decisions
+
+* get index-size: `sudo du -sh /var/lib/docker/volumes/elasticsearch_index_esdata1/_data`
