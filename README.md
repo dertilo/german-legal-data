@@ -63,3 +63,13 @@ GET /bverfg/_search
 -> `2161` decisions
 
 * get index-size: `sudo du -sh /var/lib/docker/volumes/elasticsearch_index_esdata1/_data`
+
+# [Latent Semantic Analysis on 'Orientierungsatz'](latent_semantic_analysis.py)
+* not sure whether these wordclouds make any sense
+
+### dimension 0 
+![0](word_clouds/0.png)
+### dimension 1 
+![1](word_clouds/1.png)
+### dimension 6 
+![6](word_clouds/6.png)

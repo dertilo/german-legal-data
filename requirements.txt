@@ -4,3 +4,6 @@ pandas
 whoosh
 tqdm
 beautifulsoup4
+scikit-learn
+wordcloud
+matplotlib
