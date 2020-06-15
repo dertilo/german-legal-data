@@ -1,6 +1,7 @@
 # german-legal-data
 0. install [git-lfs](https://git-lfs.github.com/)  
     0. `curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash`
+    0. `sudo apt-get install git-lfs`
     0. `git lfs install`
     
 1. clone repo `https://github.com/dertilo/german-legal-data.git`
